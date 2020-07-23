@@ -1,0 +1,40 @@
+GET http://localhost:3001
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTU1MjI4MTEsImV4cCI6MTU5NTUyMjg0MSwiYXVkIjoiNWYxOTdjODQ0MzJmNTcxZWI0N2ZiN2U0IiwiaXNzIjoic3Jsb3RlLmNvbSJ9.x1wNkSGzsJE0Jv1vdQ2qY8FUCCyu-po1ys0WoQfvxyQ
+
+### Login
+POST  http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+    "email":"sachi12111@test.com",
+    "password":"1234"
+
+}
+
+### register
+POST  http://localhost:3001/auth/register
+Content-Type: application/json
+
+{
+    "email":"sachi121111@test.com",
+    "password":"1234"
+
+}
+
+### refresh-token
+POST  http://localhost:3001/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTU1MjM0MDgsImV4cCI6MTU5NTUyMzQzOCwiYXVkIjoiNWYxOTdjODQ0MzJmNTcxZWI0N2ZiN2U0IiwiaXNzIjoic3Jsb3RlLmNvbSJ9.oQVaUclZR2FC2VmTZB7-1smxeDIyfX13Bb-qPj2wbk8","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTU1MjM0MDgsImV4cCI6MTYyNzA4MTAwOCwiYXVkIjoiNWYxOTdjODQ0MzJmNTcxZWI0N2ZiN2U0IiwiaXNzIjoic3Jsb3RlLmNvbSJ9.yOhagxDGDCRjsE_rl7AR_XtlG89RlMw12oKXiqViIsM"
+}
+### logout
+DELETE   http://localhost:3001/auth/logout
+
+
+
+
+
+
+
+
